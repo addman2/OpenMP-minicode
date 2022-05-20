@@ -1,0 +1,49 @@
+Fri May 20 13:02:30 2022       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 510.60.02    Driver Version: 510.60.02    CUDA Version: 11.6     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA GeForce ...  Off  | 00000000:1D:00.0  On |                  N/A |
+|  0%   52C    P8    14W / 200W |    301MiB /  6144MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   1  NVIDIA GeForce ...  Off  | 00000000:1E:00.0 Off |                  N/A |
+| 29%   39C    P8     9W / 184W |      6MiB / 12288MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A      2524      G   /usr/lib/xorg/Xorg                184MiB |
+|    0   N/A  N/A      2639      G   /usr/bin/gnome-shell               43MiB |
+|    0   N/A  N/A   1184596      G   ...AAAAAAAAA= --shared-files       20MiB |
+|    0   N/A  N/A   1790723      G   ...478751406232850526,131072       48MiB |
+|    1   N/A  N/A      2524      G   /usr/lib/xorg/Xorg                  4MiB |
++-----------------------------------------------------------------------------+
+
+Test with 4 walkers, 100 of orbitals, and 1000 of basis function
+
+ Testing Dgemv
+ NW           4
+ NORB         100
+ NBAS        1000
+ ngen        1000
+ Starting
+          10 %
+          20 %
+          30 %
+          40 %
+          50 %
+          60 %
+          70 %
+          80 %
+          90 %
+         100 %
+  Time spend in GPU   1.04999995    
+  Total time    3.95000005    
